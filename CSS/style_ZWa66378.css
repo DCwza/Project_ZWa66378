@@ -1,0 +1,77 @@
+html{
+    background-color: beige;
+    display: block;
+}
+
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: teal;
+    width:65%;
+    position: relative;
+    margin:auto;
+    padding:2%;
+
+}
+
+header{
+    min-height:100px;
+    width: 100%;
+    display: block;
+    background:url(../Images/banner.JPG) center/cover no-repeat;
+}
+h1{
+    color:aquamarine;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    
+}
+
+
+header ul{
+    height:auto;
+    padding:1px; 
+   
+}
+
+header>nav>ul>li{
+    display: block;
+    float:left;
+    width:33%;
+   
+    padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-style: solid; 
+    text-align:center;  
+    
+}
+
+header a{
+    text-decoration:none;
+    color:beige;
+    font-weight: bold;
+}
+h3 p{
+    padding: 5px;
+}
+
+footer{
+    clear:both;
+    display: flex;
+    flex-flow:row wrap;   
+    color: beige;
+    font-size: 3px;
+
+}
+
+footer span{
+    flex: 1 1 50px;
+}

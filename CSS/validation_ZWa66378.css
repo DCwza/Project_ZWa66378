@@ -1,0 +1,11 @@
+input#firstName:focus:valid, input#lastName:focus:valid, input#country:focus:valid, input#email:focus:valid{
+    background-color: honeydew;
+}
+
+input#firstName:focus:invalid, input#lastName:focus:invalid, input#country:focus:invalid, input#email:focus:invalid{
+    background-color: red;
+}
+
+select#favorite:focus:valid{
+    background-color:honeydew;
+}

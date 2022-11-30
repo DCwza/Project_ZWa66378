@@ -1,0 +1,55 @@
+div.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    min-height: 400px;
+}
+
+div span{
+   display:flex;
+   padding:5px;
+   background-color:beige;
+   border:2px solid cyan;
+   
+}
+
+div span p{
+    padding:5%;
+}
+
+.article{
+    grid-column:span 3;
+    display: block;
+}
+.article>span{
+    display: block;
+}
+.article img{
+    margin:5%;
+}
+.sider{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:auto;
+}
+
+.sider >*{
+    flex: 1 1 50px;
+
+}
+
+.sider > ul{
+    height:75%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sider a{
+    text-decoration: none;    
+}
+
+.sider li{
+    flex: 1 1 50px;   
+}

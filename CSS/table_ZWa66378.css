@@ -1,0 +1,19 @@
+div.page2_table{
+    display:block;
+    float: left;
+    width: 100%;
+}
+.page2_table{
+    background-color: beige;
+}
+
+tr{
+    width: 100%;
+}
+th, td{
+    border:1px black solid;
+    
+}
+th{
+    width: auto;
+}

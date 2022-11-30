@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zi An Wang 300366378">
+        <title>CSIS1280 Term Project</title>
+        <link href="css/style_ZWa66378.css" rel="stylesheet">
+        <link href="css/form_ZWa66378.css" rel="stylesheet">
+        <link href="css/table_ZWa66378.css" rel="stylesheet">
+        <link href="css/validation_ZWa66378.css" rel="stylesheet">
+        <link href="css/grid_ZWa66378.css" rel="stylesheet">
+        <!--<link href="css/media_ZWa66378.css" rel="stylesheet"> -->
+        <script src="Script/headers.js"></script>
+        <script src="Script/form.js"></script>   
+        <script src="Script/validation.js"></script>
+    </head>
+    <body onload="generateHeader3()">
+        <header>
+            <h1>
+                
+            </h1>
+            <Nav>
+                <ul>
+                    <li>
+                        <a href="index_ZWa66378.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="page2_ZWa66378.html">Scenes</a>
+                    </li>
+                    <li>
+                        <a href="page3_ZWa66378.html">Log Book</a>
+                    </li>
+                </ul>
+            </Nav>
+        </header>
+        <div class="grid">
+           <span class="sider" >
+                <p id="sidera">
+
+                </p>
+                <p id="thankyou_span">
+                       
+                </p>
+           </span>
+
+           <span class="article" id="log_book">
+                <h2>Visitor Logging Book</h2>
+                <div>Please leave your feedback by completeing the form below.</div> 
+                <form>
+                    <fieldset>
+                        <legend>Leave Your Print Here</legend>
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your First Name here" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name here" required>
+                        </div>
+                        <div>
+                            <label for="country">Your Country</label>
+                            <input type="text" name="country" id="country" placeholder="Tell me where are you from" required>
+                        </div>
+                        <div>
+                            <lable for="email">Your Email</lable>
+                            <input type="email" name="email" id="email" placeholder="Please leave a way to contact you" required>
+                        </div>
+                        <div>
+                            <lable for="favorite">Which scene is your favorite?</lable>
+                            <select name="favorite" id="favorite" size="3" mutiple>
+                                <optgroup label="Scene">
+                                    <option value="Neah Bay">Neah Bay</option>
+                                    <option value="Cape Flattery">Cape Flattery</option>
+                                    <option value="Port Angeles">Port Angeles</option>
+                                </optgroup>                           
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you going to OLM?</legend>
+                        <div>
+                            <label for="option">Are you goint to visit OLM?</label>
+                            <span>
+                                <input type="radio" name="option" id="option" value="Yes">"Yes"
+                                <input type="radio" name="option" id="option" value="No">"No"
+                                <input type="radio" name="option" id="option" value="Not Sure">"Not Sure"
+                            </span>
+                        </div>
+                        <div>
+                            <label for="tripDate">If so, When you plan your trip?</label>
+                            <input type="date" name="tripDate" id="tripDate">
+                        </div>
+                        <div>
+                            <label for="destination">if you going there, which one you will go to?</label>
+                            <span>
+                                <input type="checkbox" name="destination" id="dest_Neah" value="Neah Bay">"Neah Bay"
+                                <input type="checkbox" name="destination" id="dest_Flattary" value="Cape Flattary">"Cape Flattary"
+                                <input type="checkbox" name="destination" id="dest_Angeles" value="Port Angeles">"Port Angeles"
+                            </span>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" value="Submit This Form"  onClick="processData(this.form)" >
+                        </div>
+                        <div>
+                            <lablel for="feedback">Tell me how you feel about trips to OLM?</lablel>
+                            <textarea name="feedback" row="10" col="100" wrap="hard">
+                            </textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" value="Submit Your Feedback" onclick="thankYou()">
+                        </div>
+
+                    </fieldset>
+                </form>
+           </span>
+            
+        </div>    
+        <footer>
+            <span>
+                <small>Address of Olympic Naitonal Park:</small>
+                <small>Olympic National Park Visitor Center
+                    3002 Mount Angeles Road
+                    Port Angeles , WA 98362</small>
+            </span>
+            <span>
+                <small>CopyRight &copy; ZiAnWang CSIS1280 Term Project 2022 Oct 30</small>
+            </span>
+        </footer>
+    </body>
+
+</html>
